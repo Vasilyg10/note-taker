@@ -1,7 +1,5 @@
-const fs = require('fs');
 const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
-const path = require('path');
 
 const express = require('express');
 const PORT = process.env.PORT || 3001;
@@ -15,5 +13,5 @@ app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
 app.listen(PORT, () => {
-    console.log(`The server is no on port ${PORT}!`);
+    console.log(`The server is now on port ${PORT}!`);
 });
